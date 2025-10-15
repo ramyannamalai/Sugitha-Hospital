@@ -4,37 +4,37 @@ import { FaHeartbeat, FaClipboardList, FaCut, FaBriefcaseMedical } from "react-i
 const departments = [
   {
     icon: <FaHeartbeat size={40} className="text-white" />,
-    title: "CARDIOLOGY",
-    desc: "Fact that a reader will be distracted by the readable page when looking at its layout.",
+    title: "Tele Consultation",
+    desc: "Connect with our doctors from the comfort of your home.",
   },
   {
     icon: <FaClipboardList size={40} className="text-white" />,
-    title: "DIAGNOSIS",
-    desc: "Fact that a reader will be distracted by the readable page when looking at its layout.",
+    title: "ECG(Electrocardiogram)",
+    desc: "Quick and accurate heart monitoring for early detection.",
   },
   {
     icon: <FaCut size={40} className="text-white" />,
-    title: "SURGERY",
-    desc: "Fact that a reader will be distracted by the readable page when looking at its layout.",
+    title: "Laboratory Tests",
+    desc: "Reliable diagnostic tests for precise health evaluation.",
   },
   {
     icon: <FaBriefcaseMedical size={40} className="text-white" />,
-    title: "FIRST AID",
-    desc: "Fact that a reader will be distracted by the readable page when looking at its layout.",
+    title: "Home Visit ",
+    desc: "Expert medical care delivered right at your doorstep.",
   },
 ];
 
 const Services = () => {
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="py-16 bg-white text-center font-nunito">
       <div className="max-w-6xl mx-auto px-5">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          OUR DEPARTMENTS
+          OUR SERVICES
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Asperiores sunt consectetur impedit nulla molestiae delectus repellat
-          laborum dolores doloremque accusantium.
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-sm md:text-[17px]">
+          We provide a wide range of trusted medical services designed to ensure your health,
+           comfort, and well-being.
         </p>
 
         {/* Department Grid */}
@@ -50,7 +50,7 @@ const Services = () => {
                 </div>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">{dept.title}</h3>
-              <p className="text-gray-600 text-sm">{dept.desc}</p>
+              <p className="text-gray-600  text-sm md:text-[17px]">{dept.desc}</p>
             </div>
           ))}
         </div>
