@@ -10,7 +10,7 @@ const Footer = () => (
       <div className="max-w-xs">
         <img src={logo} className="w-32 h-32" />
         <p className="text-white/90 mt-2 text-justify">
-At Dr.Sujitha Hospital, we are dedicated to providing compassionate, high-quality healthcare for individuals and families.        </p>
+         At Dr.Sujitha Hospital, we are dedicated to providing compassionate, high-quality healthcare for individuals and families.        </p>
       </div>
 
      
