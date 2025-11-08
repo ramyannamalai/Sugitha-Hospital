@@ -6,10 +6,12 @@ import ContactSec from "../Components/Home/ContactSec";
 import Testimonial from "../Components/Home/Testimonials";
 import Footer from "./Footer";
 import AboutUs from "../Components/AboutU/AboutUs";
+import Header from "./Header";
 
 const Home = () => {
   return (
     <div>
+      <Header/>
       <Banner />
       
       <AboutSec />

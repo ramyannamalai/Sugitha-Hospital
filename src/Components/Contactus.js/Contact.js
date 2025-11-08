@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Header from "../../Screens/Header";
+import Footer from "../../Screens/Footer";
 
 const SERVICE_OPTIONS = [
   "Consultation",
@@ -8,7 +10,7 @@ const SERVICE_OPTIONS = [
   "Other",
 ];
 
-const AboutUs = () => {
+const Contactus = () => {
   const [confirmation, setConfirmation] = useState("");
   const [form, setForm] = useState({
     name: "",
@@ -31,8 +33,10 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto py-12 px-4 md:px-0 font-nunito">
-      <div className="flex flex-col md:flex-row gap-8 bg-white rounded-2xl shadow p-4">
+    <>
+    <Header/>
+    <div className="max-w-5xl mx-auto py-24 px-4 md:px-0 font-nunito">
+      <div className="flex flex-col md:flex-row gap-10 bg-white rounded-2xl shadow p-4">
         <div className="md:w-1/2 w-full">
  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
          GET IN TOUCH
@@ -146,7 +150,10 @@ const AboutUs = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+        </>
+
   );
 };
 
-export default AboutUs;
+export default Contactus;

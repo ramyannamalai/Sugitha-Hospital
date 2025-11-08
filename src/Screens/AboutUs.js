@@ -4,10 +4,13 @@ import Breadcrumbs from "../Components/AboutU/Breadcrumbs";
 import VisionMission from "../Components/AboutU/VisionMission";
 import Testimonial from "../Components/Home/Testimonials";
 import CallToAction from "../Components/AboutU/CallToAction";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const AboutUs = () => {
   return (
     <>
+      <Header />
       <Breadcrumbs />
       {/* Section with image and paragraph side by side */}
       <section className="flex flex-col md:flex-row items-center justify-center px-6 md:px-0 py-10 bg-white max-w-6xl mx-auto font-nunito">
@@ -20,9 +23,9 @@ const AboutUs = () => {
         </div>
 
         <div className="md:w-1/2 w-full md:pl-6 text-left">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-          ABOUT US
-        </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            ABOUT US
+          </h2>
           <p className="text-gray-600 leading-relaxed mb-6 text-justify text-sm md:text-[17px]">
             At Dr.Sujitha Hospital, we are dedicated to providing compassionate,
             high-quality healthcare for individuals and families. Our mission is
@@ -38,19 +41,20 @@ const AboutUs = () => {
       </section>
 
       {/* Separate div for the rest of the paragraph */}
-      <div className="md:max-w-6xl w-full md:pl-6 text-left md:text-left mx-auto px-0 py-4">
-        <p className="text-gray-600 leading-relaxed mb-6 text-justify text-sm md:text-[17px]">
+      <div className="max-w-6xl w-full mx-auto px-5 md:px-10 py-4 font-nunito">
+        <p className="text-gray-600 leading-relaxed mb-6 text-justify text-[15px] md:text-[17px]">
           We believe that every patient deserves attentive care, clear
           communication, and a comfortable environment. Our clinic is designed to
           ensure a calm, hygienic, and patient-friendly experience, making every
           visit pleasant and reassuring.
-
+          <br /><br />
           Your health is our priority, and we’re committed to supporting you on
           every step of your wellness journey.
         </p>
       </div>
       <VisionMission />
       <Testimonial />
+      <Footer />
     </>
   );
 };

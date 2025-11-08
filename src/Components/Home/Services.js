@@ -1,5 +1,7 @@
 import React from "react";
 import { FaHeartbeat, FaClipboardList, FaCut, FaBriefcaseMedical } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 
 const departments = [
   {
@@ -24,17 +26,20 @@ const departments = [
   },
 ];
 
+
+
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-16 bg-white text-center font-nunito">
       <div className="max-w-6xl mx-auto px-5">
-        {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           OUR SERVICES
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-sm md:text-[17px]">
           We provide a wide range of trusted medical services designed to ensure your health,
-           comfort, and well-being.
+          comfort, and well-being.
         </p>
 
         {/* Department Grid */}
@@ -57,7 +62,10 @@ const Services = () => {
 
         {/* Button */}
         <div className="mt-12">
-          <button className="bg-teal-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-teal-600 transition">
+          <button
+            onClick={() => navigate("/service")}
+            className="bg-teal-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-teal-600 transition"
+          >
             View All
           </button>
         </div>
